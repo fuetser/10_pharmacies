@@ -59,8 +59,7 @@ def show_map(middle_pos, pharmacies):
 
 
 def main():
-    # middle_pos = get_middle_point(" ".join(sys.argv[1:]))
-    middle_pos = get_middle_point("москва проспект мира 10")
+    middle_pos = get_middle_point(" ".join(sys.argv[1:]))
     json_data = get_pharmacies(middle_pos)
     parsed_data = parse_pharmacies(json_data)
     show_map(middle_pos, parsed_data)
